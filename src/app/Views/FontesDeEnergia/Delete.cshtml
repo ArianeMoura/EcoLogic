@@ -1,0 +1,30 @@
+@model app.Models.Entities.FonteDeEnergia
+
+@{
+    Layout = "_ContentLayout";
+    ViewData["Title"] = "Excluir Fonte de Energia";
+}
+
+<h1 class="mb-4">Excluir Fonte de Energia</h1>
+
+<div style="max-width: 400px;">
+    <h3>Tem certeza de que deseja excluir esta fonte de energia?</h3>
+    
+    <div class="mb-3">
+        <label class="form-label">@Html.DisplayNameFor(model => model.Tipo)</label>
+        <input class="form-control" value="@Model.Tipo" readonly />
+    </div>
+    
+    <div class="mb-3">
+        <label class="form-label">@Html.DisplayNameFor(model => model.EficienciaMedia)</label>
+        <input class="form-control" value="@Model.EficienciaMedia" readonly />
+    </div>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-danger w-100">Excluir</button>
+            <a asp-action="Index" class="btn btn-secondary w-100">Voltar</a>
+        </div>
+    </form>
+</div>

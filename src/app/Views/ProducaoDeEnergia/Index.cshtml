@@ -1,0 +1,49 @@
+@model IEnumerable<app.Models.Entities.ProducaoDeEnergia>
+
+@{
+    Layout = "_ContentLayout";
+    ViewData["Title"] = "Produção de Energia";
+}
+
+@if (!Model.Any())
+{
+    <p>Nenhuma produção de energia encontrada.</p>
+}
+else
+{
+    <h1>Produção de Energia</h1>
+
+    <a asp-action="Add" class="btn btn-primary mb-3">Adicionar</a>
+
+    <table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>Usina</th>
+            <th>Data de Produção</th>
+            <th>Energia Gerada (kW)</th>
+            <th>Eficiência Operacional (%)</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var producao in Model)
+            {
+                <tr>
+
+                   
+                    <td>@producao.Usina.Nome</td>
+                    <td>@producao.DataProducao.ToString("dd/MM/yyyy")</td>
+                    <td>@producao.EnergiaGeradaKW.ToString("N2")</td>
+                    <td>@(producao.EficienciaOperacional.HasValue ? producao.EficienciaOperacional.Value.ToString("N2") : "-")</td>
+                    <td>
+
+                        <a asp-action="Edit" asp-route-id="@producao.Id" class="btn btn-primary btn-sm">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@producao.Id" class="btn btn-danger btn-sm">Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

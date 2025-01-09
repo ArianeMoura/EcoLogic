@@ -1,0 +1,38 @@
+@model app.Models.ViewModels.GrupoPermissaoCreateViewModel
+
+@{
+    Layout = "_ContentLayout";
+    ViewData["Title"] = "Adicionar Grupo de Permissões";
+}
+
+<h1 class="mb-4">Adicionar Grupo de Permissões</h1>
+<form asp-action="Create" style="max-width: 400px;" novalidate>
+    <div class="mb-3">
+        <label asp-for="Nome" class="form-label">Nome</label>
+        <input asp-for="Nome" class="form-control" required />
+        <span asp-validation-for="Nome" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Permissões</label>
+        <select asp-for="PermissoesSelecionadas" 
+                asp-items="Model.PermissoesDisponiveis" 
+                class="form-select" 
+                multiple 
+                required>
+        </select>
+    </div>
+
+    <div class="d-flex gap-2">
+        <button type="submit" class="btn btn-primary w-100">Salvar</button>
+        <a asp-action="Index" class="btn btn-secondary w-100">Voltar</a>
+    </div>
+</form>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            $('select[multiple]').select2();
+        });
+    </script>
+}

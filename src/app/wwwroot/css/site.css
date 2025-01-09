@@ -1,0 +1,74 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-success-custom {
+  background-color: #1D6B59 !important;
+  width: 240px;
+  height: auto;
+}
+
+.search-bar {
+  background-color: #24826F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-custom {
+  width: 100%;
+  height: 48px;
+  background-color: #24826F;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #8DB5AD;
+}
+
+.btn-secondary-custom {
+  width: 163px;
+  height: 60px;
+  background-color: #569689;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) inset;
+  transition: background-color 0.3s;
+  margin-top: 50px;
+}
+
+.btn-secondary-custom:hover {
+  background-color: #8DB5AD;
+}
+
+
+
+
+

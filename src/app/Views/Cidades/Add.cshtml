@@ -1,0 +1,22 @@
+@model app.Models.AddCidadeViewModel;
+
+<h1>Add Cidade</h1>
+
+<form method="post">
+    <div>
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" asp-for="Name" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label for="estadoId">Estado</label>
+        <select asp-for="EstadoId" asp-items="@(new SelectList(Model.Estados, "Id", "Name"))">
+            <option value="">Selecione um estado</option>
+        </select>
+    </div>
+
+    <div class="mt-3">
+        <button type="submit">Salvar</button>
+    </div>
+</form>

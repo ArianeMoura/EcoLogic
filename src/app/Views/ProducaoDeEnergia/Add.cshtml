@@ -1,0 +1,47 @@
+@model app.Models.ProducaoDeEnergiaViewModel
+
+@{
+    Layout = "_ContentLayout";
+    ViewData["Title"] = "Adicionar Produção de Energia";
+}
+
+<h1 class="mb-4">@ViewData["Title"]</h1>
+
+<form asp-action="Create" style="max-width: 600px;" novalidate>
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    
+    <div class="mb-3">
+        <label asp-for="UsinaId" class="form-label">Usina</label>
+        <select asp-for="UsinaId" class="form-select"
+            asp-items="@(new SelectList(ViewBag.Usinas, "Id", "Nome"))">
+            <option value="">Selecione uma usina</option>
+        </select>
+        <span asp-validation-for="UsinaId" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="DataProducao" class="form-label"></label>
+        <input asp-for="DataProducao" class="form-control" required />
+        <span asp-validation-for="DataProducao" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="EnergiaGeradaKW" class="form-label"></label>
+        <input asp-for="EnergiaGeradaKW" class="form-control" required />
+        <span asp-validation-for="EnergiaGeradaKW" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="EficienciaOperacional" class="form-label"></label>
+        <input asp-for="EficienciaOperacional" class="form-control" required />
+        <span asp-validation-for="EficienciaOperacional" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">Adicionar</button>
+</form>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

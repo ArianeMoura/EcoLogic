@@ -1,0 +1,30 @@
+@model app.Models.Entities.FonteDeEnergia
+
+@{
+    Layout = "_ContentLayout";
+    ViewData["Title"] = "Detalhes da Fonte de Energia";
+}
+
+<h2>Detalhes da Fonte de Energia</h2>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.EficienciaMedia)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.EficienciaMedia)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Editar</a> |
+    <a asp-action="Index">Voltar para a lista</a>
+</div>

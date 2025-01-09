@@ -1,0 +1,52 @@
+@model IEnumerable<app.Models.Entities.Usina>
+
+@{
+    Layout = "_ContentLayout";
+    ViewData["Title"] = "Usinas";
+}
+
+@if (!Model.Any())
+{
+    <p>Nenhuma usina encontrada.</p>
+}
+else
+{
+    <h1>Usinas</h1>
+
+    <a asp-action="Add" class="btn btn-primary mb-3">Adicionar</a>
+
+    <table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cliente</th>
+            <th>Fonte de Energia</th>
+            <th>Capacidade (kW)</th>
+            <th>Data de Início</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var usina in Model)
+            {
+                <tr>
+
+                   
+                    <td>@usina.Nome</td>
+                    <td>@usina.Cliente.Nome</td>
+                    <td>@usina.FonteDeEnergia.Tipo</td>
+                    <td>@usina.CapacidadeKW</td>
+                    <td>@usina.DataInicio.ToString("dd/MM/yyyy")</td>
+                    <td>
+
+                        <a asp-action="Edit" asp-route-id="@usina.Id" class="btn btn-primary btn-sm">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@usina.Id" class="btn btn-danger btn-sm"
+                            >Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

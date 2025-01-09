@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/app.styles.css" asp-append-version="true" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column vh-100" style="font-family: 'Saira Condensed';">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">EcoLogic</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="FaleConosco" asp-action="Index">Fale Conosco</a>
+                        </li>
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Usinas" asp-action="Index">Dashboard</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <form asp-controller="Auth" asp-action="Logout" method="post">
+                                    <button type="submit" class="nav-link text-dark border-0 bg-transparent">Logout</button>
+                                </form>
+                            </li>
+
+                            
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Auth" asp-action="Login">Login</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="w-100 flex-fill">
+        <main role="main" class="h-100 w-100">
+            <div class="d-flex flex-column h-100 w-100">
+                <div class="d-flex h-100 w-100 ">
+                    <aside class="bg-success-custom shadow-lg py-3">
+                        
+
+                        <div class="btn-group-vertical w-100 px-3">
+                            @if (User.HasClaim("Permissoes", "Usinas"))
+                            {
+                                <a asp-controller="Usinas" asp-action="Index" class="btn btn-custom mt-3">Usinas</a>
+                            }
+                            
+                            @if (User.HasClaim("Permissoes", "FontesDeEnergia"))
+                            {
+                                <a asp-controller="FontesDeEnergia" asp-action="Index" class="btn btn-custom mt-3">Fonte de Energia</a>
+                            }
+                            
+                            @if (User.HasClaim("Permissoes", "ProducaoDeEnergia"))
+                            {
+                                <a asp-controller="ProducaoDeEnergia" asp-action="Index" class="btn btn-custom mt-3">Produção</a>
+                            }
+                            
+                            @if (User.HasClaim("Permissoes", "Clientes"))
+                            {
+                                <a asp-controller="Clientes" asp-action="Index" class="btn btn-custom mt-3">Clientes</a>
+                            }
+                            
+                            @if (User.HasClaim("Permissoes", "GruposPermissoes"))
+                            {
+                                <a asp-controller="GruposPermissoes" asp-action="Index" class="btn btn-custom mt-3">Grupos de Permissões</a>
+                            }
+                            
+                            @if (User.HasClaim("Permissoes", "Permissoes"))
+                            {
+                                <a asp-controller="Permissoes" asp-action="Index" class="btn btn-custom mt-3">Permissões</a>
+                            }
+                            
+                            @if (User.HasClaim("Permissoes", "Usuarios"))
+                            {
+                                <a asp-controller="Usuarios" asp-action="Index" class="btn btn-custom mt-3">Usuários</a>
+                            }
+                        </div>
+                    </aside>
+
+                    <div class="w-100 h-100 p-4">
+                        @RenderBody()
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <footer class="bg-warning py-4 shadow">
+        <div class="container text-center">
+            <p class="text-white fw-light mb-3 mt-2">&copy; 2024 EcoLogic - Todos os direitos reservados.</p>
+            <div class="d-flex justify-content-center gap-3 mb-2">
+                <img id="cel-icon" src="../../images/phone.png" alt="Phone" width="24" height="24">
+                <img src="../../images/whatsapp.png" alt="Whatsapp" width="24" height="24">
+                <img src="../../images/email.png" alt="Email" width="24" height="24">
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

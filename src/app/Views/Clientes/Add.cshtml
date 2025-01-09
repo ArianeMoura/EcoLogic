@@ -1,0 +1,20 @@
+@{
+    Layout = "_ContentLayout";
+    ViewData["Title"] = "Adicionar Cliente";
+}
+
+<h1 class="mb-4">Adicionar Cliente</h1>
+
+<form method="post" style="max-width: 600px;" novalidate>
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome" name="nome" required />
+    </div>
+
+    <div class="mb-3">
+        <label for="cpfCnpj" class="form-label">CPF/CNPJ</label>
+        <input type="text" class="form-control" id="cpfCnpj" name="cpfCnpj" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary w-100">Salvar</button>
+</form>

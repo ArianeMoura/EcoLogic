@@ -1,0 +1,35 @@
+@model app.Models.Entities.GrupoPermissao
+
+@{
+    Layout = "_ContentLayout";
+    ViewData["Title"] = "Excluir Grupo de Permissão";
+}
+
+<h1 class="mb-4">Excluir Grupo de Permissão</h1>
+
+<div style="max-width: 400px;">
+    <h3>Você tem certeza que deseja excluir este grupo de permissão?</h3>
+    
+    <div class="mb-3">
+        <label class="form-label">Nome</label>
+        <input class="form-control" value="@Model.Nome" readonly />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Permissões</label>
+        <div class="form-control" style="height: auto;">
+            @foreach (var permissao in Model.Permissoes)
+            {
+                <div>@permissao.Nome</div>
+            }
+        </div>
+    </div>
+    
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="mb-3 d-flex gap-2">
+            <button type="submit" class="btn btn-danger w-100">Excluir</button>
+            <a asp-action="Index" class="btn btn-secondary w-100">Voltar</a>
+        </div>
+    </form>
+</div>

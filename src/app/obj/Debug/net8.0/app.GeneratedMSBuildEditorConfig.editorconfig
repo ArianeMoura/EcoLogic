@@ -1,0 +1,219 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = app
+build_property.RootNamespace = app
+build_property.ProjectDir = /Users/arianemoura/Desktop/EcoLogic/src/app/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/arianemoura/Desktop/EcoLogic/src/app
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Auth/RecuperarSenha.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aC9SZWN1cGVyYXJTZW5oYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Auth/RedefinirSenha.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXV0aC9SZWRlZmluaXJTZW5oYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Cidades/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2lkYWRlcy9BZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Cidades/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2lkYWRlcy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Cidades/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2lkYWRlcy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Cidades/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2lkYWRlcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Clientes/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Clientes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Clientes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Clientes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Clientes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2xpZW50ZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Estados/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXN0YWRvcy9BZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Estados/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXN0YWRvcy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Estados/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXN0YWRvcy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Estados/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXN0YWRvcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/FontesDeEnergia/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9udGVzRGVFbmVyZ2lhL0FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/FontesDeEnergia/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9udGVzRGVFbmVyZ2lhL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/FontesDeEnergia/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9udGVzRGVFbmVyZ2lhL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/FontesDeEnergia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9udGVzRGVFbmVyZ2lhL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/FontesDeEnergia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRm9udGVzRGVFbmVyZ2lhL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/GruposPermissoes/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3J1cG9zUGVybWlzc29lcy9BZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/GruposPermissoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3J1cG9zUGVybWlzc29lcy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/GruposPermissoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3J1cG9zUGVybWlzc29lcy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/GruposPermissoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvR3J1cG9zUGVybWlzc29lcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Permissoes/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGVybWlzc29lcy9BZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Permissoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGVybWlzc29lcy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Permissoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGVybWlzc29lcy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Permissoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGVybWlzc29lcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/ProducaoDeEnergia/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjYW9EZUVuZXJnaWEvQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/ProducaoDeEnergia/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjYW9EZUVuZXJnaWEvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/ProducaoDeEnergia/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjYW9EZUVuZXJnaWEvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/ProducaoDeEnergia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjYW9EZUVuZXJnaWEvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/ProducaoDeEnergia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZHVjYW9EZUVuZXJnaWEvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Shared/_ContentLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Db250ZW50TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Shared/_MainLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19NYWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Usinas/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNpbmFzL0FkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Usinas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNpbmFzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Usinas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNpbmFzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Usinas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNpbmFzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Usuarios/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Usuarios/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Usuarios/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Usuarios/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXN1YXJpb3MvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/arianemoura/Desktop/EcoLogic/src/app/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-66efiyljir

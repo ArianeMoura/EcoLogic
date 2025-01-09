@@ -1,0 +1,19 @@
+@model app.Models.AddEstadoViewModel
+
+<h1>Add Estado</h1>
+
+<form method="post">
+    <div>
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" asp-for="Name" />
+    </div>
+
+    <div>
+        <label for="sigla">Sigla</label>
+        <input type="text" id="sigla" name="sigla" asp-for="Sigla"/>
+    </div>
+
+    <div class="mt-3">
+        <button type="submit">Salvar</button>
+    </div>
+</form>

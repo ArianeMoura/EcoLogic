@@ -1,0 +1,48 @@
+@using app.Models.ViewModels
+
+@model RecuperarSenhaViewModel
+
+@{
+    Layout = "_MainLayout";
+    ViewData["Title"] = "Redefinir Senha";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <h2 class="text-center mb-4">Redefinir Senha</h2>
+
+        <!-- Mensagem de sucesso ou erro -->
+        @if (TempData["SuccessMessage"] != null)
+        {
+            <div class="alert alert-info">
+                @TempData["SuccessMessage"]
+            </div>
+        }
+
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <div class="alert alert-danger">
+                @TempData["ErrorMessage"]
+            </div>
+        }
+
+        <form asp-action="RecuperarSenha" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <!-- Campo para e-mail -->
+            <div class="form-group mb-3">
+                <label for="Email">E-mail</label>
+                <input asp-for="Email" type="email" id="Email" class="form-control" required />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>                   
+
+           
+
+            <button type="submit" class="btn btn-primary w-100">Recuperar Senha</button>
+        </form>
+
+        <div class="text-center mt-3">
+            <a href="@Url.Action("Login", "Auth")">Voltar para a página de Login</a>
+        </div>
+    </div>
+</div>

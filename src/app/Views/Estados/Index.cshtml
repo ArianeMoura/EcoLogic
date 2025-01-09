@@ -1,0 +1,41 @@
+@model IEnumerable<app.Models.Entities.Estado>
+
+@{
+    ViewData["Title"] = "Lista de Estados";
+}
+
+<h2>Lista de Estados</h2>
+
+<a asp-action="Add" class="btn btn-primary mb-3">Adicionar Estado</a>
+
+@if (!Model.Any())
+{
+    <p>Nenhum estado encontrado.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sigla</th>
+                <th>Data de Criação</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var estado in Model)
+            {
+                <tr>
+                    <td>@estado.Name</td>
+                    <td>@estado.Sigla</td>
+                    <td>@estado.CreatedAt.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@estado.Id" class="btn btn-primary btn-sm">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@estado.Id" class="btn btn-danger btn-sm" >Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

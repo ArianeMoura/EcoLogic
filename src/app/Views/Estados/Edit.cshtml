@@ -1,0 +1,35 @@
+@model app.Models.EditEstadoViewModel
+
+@{
+    Layout = "_ContentLayout";
+    ViewData["Title"] = "Editar Estado";
+}
+
+<div class="p-4">
+    <h2>Editar Estado</h2>
+
+    <form asp-action="Edit" method="post">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="form-group">
+            <label asp-for="Name" class="control-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Sigla" class="control-label"></label>
+            <input asp-for="Sigla" class="form-control" />
+            <span asp-validation-for="Sigla" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

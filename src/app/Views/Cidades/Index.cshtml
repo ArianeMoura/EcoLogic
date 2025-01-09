@@ -1,0 +1,41 @@
+@model IEnumerable<app.Models.Entities.Cidade>
+
+@{
+    ViewData["Title"] = "Lista de Cidades";
+}
+
+<h2>Lista de Cidades</h2>
+
+<a asp-action="Add" class="btn btn-primary mb-3">Adicionar Cidade</a>
+
+@if (!Model.Any())
+{
+    <p>Nenhuma cidade encontrada.</p>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Estado</th>
+                <th>Data de Criação</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cidade in Model)
+            {
+                <tr>
+                    <td>@cidade.Name</td>
+                    <td>@cidade.Estado.Name</td>
+                    <td>@cidade.CreatedAt.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@cidade.Id" class="btn btn-primary btn-sm">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@cidade.Id" class="btn btn-danger btn-sm" >Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

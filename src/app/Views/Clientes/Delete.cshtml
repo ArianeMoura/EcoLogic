@@ -1,0 +1,35 @@
+@model app.Models.Entities.Cliente
+
+@{
+    Layout = "_ContentLayout";
+    ViewData["Title"] = "Excluir Cliente";
+}
+
+<h1 class="mb-4">Excluir Cliente</h1>
+
+<div style="max-width: 400px;">
+    <h3>Você tem certeza que deseja excluir este cliente?</h3>
+    
+    <div class="mb-3">
+        <label class="form-label">Nome</label>
+        <input class="form-control" value="@Model.Nome" readonly />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">CPF/CNPJ</label>
+        <input class="form-control" value="@Model.CpfCnpj" readonly />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Data de Criação</label>
+        <input class="form-control" value="@Model.CreatedAt" readonly />
+    </div>
+    
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="mb-3 d-flex gap-2">
+            <button type="submit" class="btn btn-danger w-100">Excluir</button>
+            <a asp-action="Index" class="btn btn-secondary w-100">Voltar</a>
+        </div>
+    </form>
+</div> 

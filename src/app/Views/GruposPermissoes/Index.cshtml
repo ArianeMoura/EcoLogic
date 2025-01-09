@@ -1,0 +1,46 @@
+@model List<app.Models.ViewModels.GrupoPermissaoViewModel>
+
+@{
+    Layout = "_ContentLayout";
+    ViewData["Title"] = "Grupos de Permissões";
+}
+
+@if (!Model.Any())
+{
+    <p>Nenhum grupo de permissão encontrado.</p>
+}
+else
+{
+    <h1>Grupos de Permissões</h1>
+
+    <a asp-action="Add" class="btn btn-primary mb-3">Adicionar</a>
+
+    <table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Permissões</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var grupo in Model)
+            {
+                <tr>
+
+                   
+                    <td>@grupo.Nome</td>
+                    <td>@string.Join(", ", grupo.PermissoesNomes)</td>
+                    <td>
+
+                        <a asp-action="Edit" asp-route-id="@grupo.Id" class="btn btn-primary btn-sm">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@grupo.Id" class="btn btn-danger btn-sm"
+                            >Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,40 @@
+@model app.Models.Entities.ProducaoDeEnergia
+
+@{
+    Layout = "_ContentLayout";
+    ViewData["Title"] = "Excluir Produção de Energia";
+}
+
+<h1 class="mb-4">@ViewData["Title"]</h1>
+
+<div style="max-width: 400px;">
+    <h3>Tem certeza de que deseja excluir esta produção de energia?</h3>
+    
+    <div class="mb-3">
+        <label class="form-label">Usina</label>
+        <input class="form-control" value="@Model.Usina.Nome" readonly />
+    </div>
+    
+    <div class="mb-3">
+        <label class="form-label">Data de Produção</label>
+        <input class="form-control" value="@Model.DataProducao.ToShortDateString()" readonly />
+    </div>
+    
+    <div class="mb-3">
+        <label class="form-label">Energia Gerada (kW)</label>
+        <input class="form-control" value="@Model.EnergiaGeradaKW.ToString("N2")" readonly />
+    </div>
+    
+    <div class="mb-3">
+        <label class="form-label">Eficiência Operacional (%)</label>
+        <input class="form-control" value="@(Model.EficienciaOperacional.HasValue ? Model.EficienciaOperacional.Value.ToString("N2") : "-")" readonly />
+    </div>
+
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <div class="d-flex gap-2">
+            <button type="submit" class="btn btn-danger w-100">Excluir</button>
+            <a asp-action="Index" class="btn btn-secondary w-100">Voltar</a>
+        </div>
+    </form>
+</div>

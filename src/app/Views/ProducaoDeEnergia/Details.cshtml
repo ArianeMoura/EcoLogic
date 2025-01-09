@@ -1,0 +1,54 @@
+@model app.Models.Entities.ProducaoDeEnergia
+
+@{
+    Layout = "_ContentLayout";
+    ViewData["Title"] = "Detalhes da Produção de Energia";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Usina
+        </dt>
+        <dd class="col-sm-10">
+            @Model.Usina.Nome
+        </dd>
+        <dt class="col-sm-2">
+            Data de Produção
+        </dt>
+        <dd class="col-sm-10">
+            @Model.DataProducao.ToShortDateString()
+        </dd>
+        <dt class="col-sm-2">
+            Energia Gerada (kW)
+        </dt>
+        <dd class="col-sm-10">
+            @Model.EnergiaGeradaKW.ToString("N2")
+        </dd>
+        <dt class="col-sm-2">
+            Eficiência Operacional (%)
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.EficienciaOperacional.HasValue ? Model.EficienciaOperacional.Value.ToString("N2") : "-")
+        </dd>
+        <dt class="col-sm-2">
+            Criado em
+        </dt>
+        <dd class="col-sm-10">
+            @Model.CreatedAt.ToString("g")
+        </dd>
+        <dt class="col-sm-2">
+            Atualizado em
+        </dt>
+        <dd class="col-sm-10">
+            @(Model.UpdatedAt.HasValue ? Model.UpdatedAt.Value.ToString("g") : "-")
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Voltar para a Lista</a>
+</div>

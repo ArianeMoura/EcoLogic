@@ -1,0 +1,48 @@
+@model IEnumerable<app.Models.ViewModels.PermissaoViewModel>
+
+@{
+    Layout = "_ContentLayout";
+    ViewData["Title"] = "Permissões";
+}
+
+@if (!Model.Any())
+{
+    <p>Nenhuma permissão encontrada.</p>
+}
+else
+{
+    <h1>Permissões</h1>
+
+    <a asp-action="Add" class="btn btn-primary mb-3">Adicionar</a>
+
+    <table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Criado em</th>
+            <th>Atualizado em</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var permissao in Model)
+            {
+                <tr>
+
+                   
+                    <td>@permissao.Nome</td>
+                    <td>@permissao.CreatedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@(permissao.UpdatedAt?.ToString("dd/MM/yyyy HH:mm") ?? "-")</td>
+                    <td>
+
+                        <a asp-action="Edit" asp-route-id="@permissao.Id" class="btn btn-primary btn-sm">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@permissao.Id" class="btn btn-danger btn-sm"
+                            >Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

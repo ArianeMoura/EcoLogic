@@ -1,0 +1,48 @@
+@model IEnumerable<app.Models.Entities.FonteDeEnergia>
+
+
+
+@{
+    Layout = "_ContentLayout";
+    ViewData["Title"] = "Fontes de Energia";
+}
+
+@if (!Model.Any())
+{
+    <p>Nenhuma fonte de energia encontrada.</p>
+}
+else
+{
+    <h1>Fontes de Energia</h1>
+
+    <a asp-action="Add" class="btn btn-primary mb-3">Adicionar</a>
+
+    <table class="table table-striped">
+
+    <thead>
+        <tr>
+            <th>Tipo</th>
+            <th>Eficiência Média</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var fonte in Model)
+            {
+                <tr>
+
+                   
+                    <td>@fonte.Tipo</td>
+                    <td>@fonte.EficienciaMedia</td>
+                    <td>
+
+                        <a asp-action="Edit" asp-route-id="@fonte.Id" class="btn btn-primary btn-sm">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@fonte.Id" class="btn btn-danger btn-sm"
+                            >Excluir</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
