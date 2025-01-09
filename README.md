@@ -34,10 +34,30 @@ O projeto em desenvolvimento é um Sistema de Gerenciamento de Produção de Ene
 <li><a href="docs/13-Referências.md"> Referências</a></li>
 </ol>
 
+# Instruções de Acesso ao Sistema EcoLogic
+
+Para acessar a aplicação EcoLogic como administrador, siga as orientações abaixo:
+
+🔗 **Link de Acesso:** https://ecologic-adeqbxd2fuc8a8gm.eastus2-01.azurewebsites.net/
+
+<br>
+
+🔐 **Credenciais de Acesso (Administrador):**
+
+- **E-mail:** admin@ecologic.com.br
+- **Senha:** 123456
+
+<br>
+
+**Passos para Acesso:**
+1. Clique no link de acesso fornecido acima;
+2. Na Tela de Login, insira o e-mail e a senha de administrador nos campos correspondentes;
+3. Clique no botão "Entrar" para acessar o sistema com privilégios administrativos.
+
 # Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+<a href="src/README.md"> Código Fonte</a>
 
 # Apresentação
 
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+<a href="presentation/README.md"> Apresentação da solução</a>
