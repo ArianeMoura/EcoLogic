@@ -1,22 +1,98 @@
-# EcoLogic
-
-`Análise e Desenvolvimento de Sistema - PUC Minas`
-
-`Projeto: Desenvolvimento de uma Aplicação Interativa`
-
-`2º Semestre/2024`
-
-
-
 <p align="center">
   <img src= "https://github.com/user-attachments/assets/421f29b0-8a8a-4948-8b61-d087fa89c79a" width="400">
 </p>
 
+<br>
 
-O projeto em desenvolvimento é um Sistema de Gerenciamento de Produção de Energia Renovável. Esta aplicação web terá como objetivo principal gerenciar e monitorar usinas de energia renovável, abrangendo diferentes fontes de energia como solar, eólica e hidrelétrica. O sistema oferecerá funcionalidades para o registro e atualização das informações das usinas, além de permitir a visualização e análise da produção de energia. Também incluirá a capacidade de gerar relatórios detalhados e gráficos que facilitarão a avaliação do desempenho das usinas. Com um enfoque na automação e na entrega eficiente de resultados, o sistema permitirá que equipes de dados acompanhem e otimizem a produção de energia sem a necessidade de interações diretas com a manipulação de dados.
+<h1 align="center">
+EcoLogic - Sistema de Gerenciamento de Produção de Energia Renovável
+</h1>
+
+<br>
+
+<div align="center">
+  
+`Análise e Desenvolvimento de Sistemas - PUC Minas`
+
+`Projeto: Desenvolvimento de uma Aplicação Interativa`
+
+`2º semestre/2024`
+
+</div>
+
+<br>
 
 
-# Documentação
+### 🌍 Sobre o Projeto
+**EcoLogic** é uma aplicação web desenvolvida para gerenciar e monitorar usinas de energia renovável, abrangendo fontes como solar, eólica e hidrelétrica. O sistema tem como objetivo otimizar a coleta, análise e visualização de dados de produção de energia, automatizando relatórios e análises para facilitar a tomada de decisões estratégicas.
+
+Com um foco em automação e entrega eficiente de resultados, o EcoLogic permite que equipes de dados acompanhem e otimizem a produção de energia sem a necessidade de interações diretas com a manipulação manual de dados.
+
+<br>
+
+### 🎯 Funcionalidades Principais
+– **Gerenciamento de Usinas:** Cadastro, edição, exclusão e visualização de usinas de energia.
+
+– **Controle de Produção:** Registro e análise de dados energéticos com atualização contínua.
+
+– **Visualizações Gráficas:** Gráficos dinâmicos para avaliação de desempenho.
+
+– **Relatórios Automatizados:** Geração de relatórios detalhados para análise de performance.
+
+– **Autenticação Segura:** Sistema de login com recuperação de acesso.
+
+– **CRUD Completo:** Funcionalidades robustas para gerenciar dados.
+
+<br>
+
+### 🚀 Tecnologias Utilizadas e Metodologias
+🔧 **Tecnologias**
+
+- **ASP.NET Core:** Framework poderoso para construção de APIs e aplicações web modernas, garantindo desempenho, segurança e escalabilidade.
+  
+- **SQL Server:** Banco de dados relacional robusto e confiável para armazenamento e gerenciamento de grandes volumes de dados.
+  
+- **Bootstrap:** Framework frontend responsivo que facilita a criação de layouts modernos e compatíveis com diferentes dispositivos.
+  
+- **C#:** Linguagem de programação orientada a objetos para desenvolvimento backend seguro e eficiente.
+  
+- **JavaScript:** Linguagem de programação versátil para criação de funcionalidades dinâmicas e interatividade no frontend.
+  
+- **HTML/CSS:** Estruturação semântica e estilização visual das interfaces da aplicação, garantindo uma navegação intuitiva e acessível.
+  
+- **MVC (Model-View-Controller):** Arquitetura que separa as camadas de dados, lógica de negócio e apresentação, promovendo manutenção e escalabilidade do código.
+  
+- **Azure:** Plataforma de nuvem que oferece hospedagem escalável, segura e de alta disponibilidade para a aplicação EcoLogic.
+
+<br>
+
+📋 **Metodologia Ágil**
+
+- **SCRUM:** Planejamento e organização do trabalho em sprints, com reuniões regulares para alinhamento de equipe e revisão de entregas.
+
+<br>
+
+### 🛠️ Ferramentas Utilizadas
+
+– **GitHub:** Controle de versão, integração contínua e organização de tarefas com Kanban.
+
+– **Microsoft Teams:** Comunicação e colaboração eficiente.
+
+– **WhatsApp:** Comunicação rápida e informal para atualizações urgentes.
+
+– **Figma:** Design de interface, criação de protótipos e fluxogramas.
+
+– **Canva:** Criação de apresentações, logotipos e identidade visual.
+
+– **Visual Studio Code (VS Code):** Ambiente de desenvolvimento integrado.
+
+– **Diagrams:** Criação de diagramas para visualização de processos e arquitetura do sistema.
+
+– **Azure:** Hospedagem do site com escalabilidade e segurança.
+
+<br>
+
+### 📂 Documentação do Projeto
 
 <ol>
 <li><a href="docs/01-Documentação de Contexto.md"> Documentação de Contexto</a></li>
@@ -34,11 +110,13 @@ O projeto em desenvolvimento é um Sistema de Gerenciamento de Produção de Ene
 <li><a href="docs/13-Referências.md"> Referências</a></li>
 </ol>
 
-# Instruções de Acesso ao Sistema EcoLogic
+<br>
 
-Para acessar a aplicação EcoLogic como administrador, siga as orientações abaixo:
+### 🔑 Instruções de Acesso ao Sistema EcoLogic
 
-🔗 **Link de Acesso:** https://ecologic-adeqbxd2fuc8a8gm.eastus2-01.azurewebsites.net/
+🔗 **Link de Acesso:** 
+
+https://ecologic-adeqbxd2fuc8a8gm.eastus2-01.azurewebsites.net/
 
 <br>
 
@@ -49,15 +127,32 @@ Para acessar a aplicação EcoLogic como administrador, siga as orientações ab
 
 <br>
 
-**Passos para Acesso:**
-1. Clique no link de acesso fornecido acima;
-2. Na Tela de Login, insira o e-mail e a senha de administrador nos campos correspondentes;
+📲 **Passo a Passo:**
+
+1. Clique no link de acesso fornecido.
+2. Insira o e-mail e a senha nos campos correspondentes.
 3. Clique no botão "Entrar" para acessar o sistema com privilégios administrativos.
 
-# Código
+<br>
+
+### 📦 Código-Fonte
 
 <a href="src/README.md"> Código Fonte</a>
 
-# Apresentação
+<br>
+
+### 📽️ Apresentação
 
 <a href="presentation/README.md"> Apresentação da solução</a>
+
+
+
+
+
+
+
+
+
+
+
+
