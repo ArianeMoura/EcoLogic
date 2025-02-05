@@ -13,12 +13,6 @@
 
 <br>
 
-## Wireframes
-
-Acesse o Protótipo Interativo: <a href="https://www.figma.com/proto/Db1zTIievwFgSJaRn6pPCc/EcoLogic?page-id=0%3A1&node-id=34-170&node-type=canvas&viewport=-924%2C1484%2C0.18&t=vakdleKlL0jGjySA-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=34%3A170&share=1">Wireframe Interativo
-
-<br>
-
 #### Tela Inicial
 A Dashboard Principal apresenta a empresa EcoLogic, destacando sua missão e resultados, além de informações sobre o sistema de gerenciamento de energia renovável. É o ponto de partida para os usuários conhecerem a proposta da plataforma e suas funcionalidades.
 
