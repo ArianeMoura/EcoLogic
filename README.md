@@ -1,6 +1,8 @@
-<p align="center">
-  <img src= "https://github.com/user-attachments/assets/421f29b0-8a8a-4948-8b61-d087fa89c79a" width="400">
-</p>
+<div align="center">
+ 
+<img width="426" alt="logoecologic-removebg-preview (1) 2" src="https://github.com/user-attachments/assets/f0c84bf7-bc8f-48f9-8c69-fc76a477d473" />
+
+</div>
 
 <br>
 
@@ -145,11 +147,10 @@ https://ecologic-adeqbxd2fuc8a8gm.eastus2-01.azurewebsites.net/
 
 <a href="presentation/README.md"> Apresentação da solução</a>
 
+<br>
+<br>
 
-
-
-
-
+<img width="2446" alt="image" src="https://github.com/user-attachments/assets/d68871f7-5bb1-41e4-965d-1d09a3b33ebd" />
 
 
 
