@@ -152,7 +152,7 @@ https://ecologic-adeqbxd2fuc8a8gm.eastus2-01.azurewebsites.net/
 
 <img width="2446" alt="image" src="https://github.com/user-attachments/assets/d68871f7-5bb1-41e4-965d-1d09a3b33ebd" />
 
-
+<br>
 
 
 
