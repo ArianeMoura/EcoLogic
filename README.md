@@ -122,8 +122,8 @@ https://ecologic-adeqbxd2fuc8a8gm.eastus2-01.azurewebsites.net/
 
 🔐 **Credenciais de Acesso (Administrador):**
 
-- **E-mail:** admin@ecologic.com.br
-- **Senha:** 123456
+**E-mail:** admin@ecologic.com.br </br>
+**Senha:** 123456 </br>
 
 <br>
 
