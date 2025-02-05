@@ -26,7 +26,7 @@ EcoLogic - Sistema de Gerenciamento de Produção de Energia Renovável
 ### 🌍 Sobre o Projeto
 **EcoLogic** é uma aplicação web desenvolvida para gerenciar e monitorar usinas de energia renovável, abrangendo fontes como solar, eólica e hidrelétrica. O sistema tem como objetivo otimizar a coleta, análise e visualização de dados de produção de energia, automatizando relatórios e análises para facilitar a tomada de decisões estratégicas.
 
-Com um foco em automação e entrega eficiente de resultados, o EcoLogic permite que equipes de dados acompanhem e otimizem a produção de energia sem a necessidade de interações diretas com a manipulação manual de dados.
+Com um foco em automação e entrega eficiente de resultados, o **EcoLogic** permite que equipes de dados acompanhem e otimizem a produção de energia sem a necessidade de interações diretas com a manipulação manual de dados.
 
 <br>
 
