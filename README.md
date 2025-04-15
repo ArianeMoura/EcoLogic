@@ -68,7 +68,7 @@ O **EcoLogic** é uma **aplicação web** desenvolvida para **gerenciar** e **mo
 
 ### 📲 Instruções de Acesso ao Sistema EcoLogic
 
-**Link de Acesso:** https://ecologic-adeqbxd2fuc8a8gm.eastus2-01.azurewebsites.net/
+Link de Acesso: [EcoLogic](https://ecologic-adeqbxd2fuc8a8gm.eastus2-01.azurewebsites.net/).
 
 **Credenciais de Acesso (Administrador):**
 
