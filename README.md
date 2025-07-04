@@ -1,10 +1,4 @@
 # EcoLogic - Sistema de Gerenciamento de Produção de Energia Renovável
-  
-`Análise e Desenvolvimento de Sistemas - PUC Minas`
-
-`Projeto: Desenvolvimento de uma Aplicação Interativa`
-
-`2º semestre/2024`
 
 <div align="center">
  
