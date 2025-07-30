@@ -29,7 +29,7 @@ O **EcoLogic** é uma **aplicação web** inovadora desenvolvida para **gerencia
 
 ### Código
 
-- <a href="src/README.md"> Código Fonte</a>
+- <a href="src/"> Código Fonte</a>
 
 ### 🎯 Funcionalidades Principais
 - **Gerenciamento de Usinas:** Cadastro, edição, exclusão e visualização de usinas de energia.
