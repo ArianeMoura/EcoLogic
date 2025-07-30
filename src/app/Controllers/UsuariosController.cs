@@ -66,7 +66,7 @@ namespace Controllers
                 {
                     Nome = viewModel.Nome,
                     Email = viewModel.Email,
-                    Password = viewModel.Password, // Em produção, deve-se usar hash
+                    Password = viewModel.Password, 
                     Cliente = await _dbContext.Clientes.FindAsync(viewModel.ClienteId),
                     GruposPermissoes = await _dbContext.GruposPermissoes
                         .Where(g => viewModel.GrupoPermissaoIds.Contains(g.Id))
