@@ -38,7 +38,7 @@ public class AuthController : Controller
                 .ThenInclude(gp => gp.Permissoes)
             .FirstOrDefaultAsync(u => u.Email == model.Email);
 
-        if (usuario == null || usuario.Password != model.Password) // Em produção, use hash!
+        if (usuario == null || usuario.Password != model.Password) 
         {
             ModelState.AddModelError("", "Credenciais inválidas");
             return View(model);
@@ -51,7 +51,6 @@ public class AuthController : Controller
             new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString())
         };
 
-        // Adiciona todas as permissões únicas do usuário
         var permissoes = usuario.GruposPermissoes
             .SelectMany(gp => gp.Permissoes)
             .Select(p => p.Nome)
@@ -73,7 +72,7 @@ public class AuthController : Controller
                 IsPersistent = model.RememberMe
             });
 
-        return RedirectToAction("Index", "Usinas"); // Alterado de "Home" para "Usinas"
+        return RedirectToAction("Index", "Usinas"); 
     }
 
     [HttpPost]
@@ -83,14 +82,12 @@ public class AuthController : Controller
         return RedirectToAction("Index", "Home");
     }
 
-    // Método para exibir a página de recuperação de senha
     [HttpGet]
     public IActionResult RecuperarSenha()
     {
         return View();
     }
 
-    // Método para processar o pedido de recuperação de senha
     [HttpPost]
     public async Task<IActionResult> RecuperarSenha(string email)
     {
@@ -103,31 +100,27 @@ public class AuthController : Controller
             return RedirectToAction("RecuperarSenha");
         }
 
-        // Gera um token para recuperação de senha
+
         var token = Convert.ToBase64String(RandomNumberGenerator.GetBytes(32));
-       
-       //Atualização do registro de usuário com Token
+  
        usuario.Token = token;
 
        _dbContext.Update(usuario);
 
        await _dbContext.SaveChangesAsync();
 
-        // Gera o link de recuperação
         var resetLink = Url.Action(
             "RedefinirSenha",
             "Auth",
             new { email, token },
             Request.Scheme);
 
-        // Envia o e-mail
         await EnviarEmailAsync(usuario.Email, "Recuperação de Senha", $"Clique no link para redefinir sua senha: {resetLink}");
 
         TempData["SuccessMessage"] = "Se o e-mail existir, você receberá instruções para redefinir a senha.";
         return RedirectToAction("RecuperarSenha");
     }
 
-    // Método para exibir a página de redefinição de senha
     [HttpGet]
     public IActionResult RedefinirSenha(string token, string email)
     {
@@ -139,7 +132,6 @@ public class AuthController : Controller
         return View(model);
     }
 
-    // Método para processar a redefinição de senha
     [HttpPost]
     public async Task<IActionResult> RedefinirSenha(RedefinirSenhaViewModel model)
     {
