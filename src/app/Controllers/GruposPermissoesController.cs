@@ -37,7 +37,7 @@ namespace app.Controllers
         {
             var viewModel = new GrupoPermissaoCreateViewModel
             {
-                Nome = "", // Add this line
+                Nome = "", 
                 PermissoesDisponiveis = await _dbContext.Permissoes
                     .Select(p => new SelectListItem
                     {
@@ -133,7 +133,6 @@ namespace app.Controllers
                 grupo.Nome = viewModel.Nome;
                 grupo.UpdatedAt = DateTime.Now;
 
-                // Atualiza as permissões
                 var permissoes = await _dbContext.Permissoes
                     .Where(p => viewModel.PermissoesSelecionadas.Contains(p.Id))
                     .ToListAsync();
