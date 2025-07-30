@@ -8,7 +8,7 @@
 
 <br>
 
-O **EcoLogic** é uma **aplicação web** desenvolvida para **gerenciar** e **monitorar usinas de energia renovável**, abrangendo fontes como solar, eólica e hidrelétrica. O sistema tem como objetivo otimizar a coleta, análise e visualização de dados de produção de energia, automatizando relatórios e análises para facilitar a tomada de decisões estratégicas. Com um foco em automação e entrega eficiente de resultados, o EcoLogic permite que equipes de dados acompanhem e otimizem a produção de energia sem a necessidade de interações diretas com a manipulação manual de dados.
+O **EcoLogic** é uma **aplicação web** inovadora desenvolvida para **gerenciar** e **monitorar usinas de energia renovável**, abrangendo fontes como solar, eólica e hidrelétrica. O sistema tem como objetivo otimizar a coleta, análise e visualização de dados de produção energética, automatizando a geração de relatórios e a gestão eficiente do banco de dados, para impulsionar decisões estratégicas e eficientes no setor de energias limpas.
 
 ### Documentação
 <ol>
@@ -35,22 +35,20 @@ O **EcoLogic** é uma **aplicação web** desenvolvida para **gerenciar** e **mo
 - **Gerenciamento de Usinas:** Cadastro, edição, exclusão e visualização de usinas de energia.
 - **Controle de Produção:** Registro e análise de dados energéticos com atualização contínua.
 - **Visualizações Gráficas:** Gráficos dinâmicos para avaliação de desempenho.
-- **Relatórios Automatizados:** Geração de relatórios detalhados para análise de performance.
 - **Autenticação Segura:** Sistema de login com recuperação de acesso.
 - **CRUD Completo:** Funcionalidades robustas para gerenciar dados.
 
-### 🚀 Tecnologias Utilizadas e Método Ágil
+### 🚀 Tecnologias Utilizadas 
 - **ASP.NET Core:** Framework poderoso para construção de APIs e aplicações web modernas, garantindo desempenho, segurança e escalabilidade.
+- **Entity Framework:** Ferramenta que ajuda a conectar o sistema ao banco de dados usando objetos C#, sem precisar escrever SQL direto. Facilita o mapeamento de dados, atualizações no banco e consultas.
 - **SQL Server:** Banco de dados relacional robusto e confiável para armazenamento e gerenciamento de grandes volumes de dados.
 - **Bootstrap:** Framework frontend responsivo que facilita a criação de layouts modernos e compatíveis com diferentes dispositivos.
 - **C#:** Linguagem de programação orientada a objetos para desenvolvimento backend seguro e eficiente.
 - **JavaScript:** Linguagem de programação versátil para criação de funcionalidades dinâmicas e interatividade no frontend.
 - **HTML/CSS:** Estruturação semântica e estilização visual das interfaces da aplicação, garantindo uma navegação intuitiva e acessível.
 - **MVC (Model-View-Controller):** Arquitetura que separa as camadas de dados, lógica de negócio e apresentação, promovendo manutenção e escalabilidade do código.
-- **Azure:** Plataforma de nuvem que oferece hospedagem escalável, segura e de alta disponibilidade para a aplicação EcoLogic.
-- **SCRUM:** Planejamento e organização do trabalho em sprints, com reuniões regulares para alinhamento de equipe e revisão de entregas.
 
-### 🛠️ Ferramentas Utilizadas
+### 🛠️ Ferramentas e Método Ágil
 - **GitHub:** Controle de versão, integração contínua e organização de tarefas com Kanban.
 - **Microsoft Teams:** Comunicação e colaboração eficiente.
 - **WhatsApp:** Comunicação rápida e informal para atualizações urgentes.
@@ -59,6 +57,7 @@ O **EcoLogic** é uma **aplicação web** desenvolvida para **gerenciar** e **mo
 - **Visual Studio Code (VS Code):** Ambiente de desenvolvimento integrado.
 - **Diagrams:** Criação de diagramas para visualização de processos e arquitetura do sistema.
 - **Azure:** Hospedagem do site com escalabilidade e segurança.
+- **SCRUM:** Planejamento e organização do trabalho em sprints, com reuniões regulares para alinhamento de equipe e revisão de entregas.
 
 ### 📲 Instruções de Acesso ao Sistema EcoLogic
 
