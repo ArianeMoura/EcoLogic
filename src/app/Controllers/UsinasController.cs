@@ -146,7 +146,6 @@ namespace app.Controllers
             _logger.LogInformation("Cliente ID: {ClienteId}", viewModel.ClienteId);
             _logger.LogInformation("Fonte de Energia ID: {FonteDeEnergiaId}", viewModel.FonteDeEnergiaId);
 
-            // Remove these fields from ModelState as they are not part of the form submission
             ModelState.Remove("Cidades");
             ModelState.Remove("Clientes");
             ModelState.Remove("FontesDeEnergia");
@@ -196,12 +195,10 @@ namespace app.Controllers
                         .Select(e => e.ErrorMessage)));
             }
 
-            // Populate the dropdown lists regardless of ModelState validity
             viewModel.Cidades = await _dbContext.Cidades.ToListAsync();
             viewModel.Clientes = await _dbContext.Clientes.ToListAsync();
             viewModel.FontesDeEnergia = await _dbContext.FontesDeEnergia.ToListAsync();
 
-            // Return the view with the updated viewModel
             return View(viewModel);
         }
 
