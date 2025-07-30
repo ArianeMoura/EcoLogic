@@ -51,7 +51,6 @@ O **EcoLogic** é uma **aplicação web** inovadora desenvolvida para **gerencia
 ### 🛠️ Ferramentas e Método Ágil
 - **GitHub:** Controle de versão, integração contínua e organização de tarefas com Kanban.
 - **Microsoft Teams:** Comunicação e colaboração eficiente.
-- **WhatsApp:** Comunicação rápida e informal para atualizações urgentes.
 - **Figma:** Design de interface, criação de protótipos e fluxogramas.
 - **Canva:** Criação de apresentações, logotipos e identidade visual.
 - **Visual Studio Code (VS Code):** Ambiente de desenvolvimento integrado.
