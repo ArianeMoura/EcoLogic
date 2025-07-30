@@ -32,8 +32,6 @@ namespace app.Database
             base.OnModelCreating(modelBuilder);
 
 
-            // Configuring many-to-many relationships
-            
             modelBuilder.Entity<GrupoPermissao>()
                 .HasMany(g => g.Permissoes)
                 .WithMany(p => p.GruposPermissoes)
@@ -44,7 +42,6 @@ namespace app.Database
                 .WithMany(g => g.Usuarios)
                 .UsingEntity(j => j.ToTable("UsuariosGruposPermissoes"));
 
-            // Defining unique constraints and configurations
             modelBuilder.Entity<Cliente>()
                 .HasIndex(c => c.CpfCnpj)
                 .IsUnique();
