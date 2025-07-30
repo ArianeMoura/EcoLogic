@@ -54,7 +54,6 @@ namespace app.Controllers
             }
         }
 
-        // Método para listar estados
         [HttpGet]
         public async Task<IActionResult> Index()
         {
@@ -70,7 +69,6 @@ namespace app.Controllers
             }
         }
 
-        // Método para exibir a página de edição
         [HttpGet]
         public async Task<IActionResult> Edit(Guid id)
         {
@@ -123,7 +121,6 @@ namespace app.Controllers
             }
         }
 
-        // Método para deletar um estado
         [HttpGet]
         public async Task<IActionResult> Delete(Guid id)
         {
