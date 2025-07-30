@@ -9,7 +9,6 @@ namespace app.Data
     {
         public static void Initialize(ModelBuilder modelBuilder)
         {
-            // Seed Estados with fixed IDs
             var estadoSP = Guid.NewGuid();
             var estadoRJ = Guid.NewGuid();
             var estadoMG = Guid.NewGuid();
@@ -32,7 +31,6 @@ namespace app.Data
             var cidadeSalvador = Guid.NewGuid();
             var cidadeCuritiba = Guid.NewGuid();
 
-            // Seed Cidades using EstadoId instead of Estado navigation property
             var cidades = new List<Cidade>
             {   
                 new() { Id = cidadeCampinas, Name = "Campinas", EstadoId = estadoSP, CreatedAt = DateTime.Now },
@@ -44,8 +42,6 @@ namespace app.Data
             modelBuilder.Entity<Cidade>().HasData(cidades);
 
 
-            
-            // Seed Clientes with fixed IDs
             var clienteJoao = Guid.NewGuid();
             var clienteMaria = Guid.NewGuid();
             var clienteCarlos = Guid.NewGuid();
@@ -62,7 +58,6 @@ namespace app.Data
             };
             modelBuilder.Entity<Cliente>().HasData(clientes);
 
-            // Seed FonteDeEnergia with fixed IDs
             var fonteSolar = Guid.NewGuid();
             var fonteEolica = Guid.NewGuid();
             var fonteBiomassa = Guid.NewGuid();
@@ -75,7 +70,6 @@ namespace app.Data
             };
             modelBuilder.Entity<FonteDeEnergia>().HasData(fontesDeEnergia);
 
-            // Seed Permissoes with fixed IDs
             var permUsinas = Guid.NewGuid();
             var permClientes = Guid.NewGuid();
             var permCidades = Guid.NewGuid();
@@ -100,9 +94,6 @@ namespace app.Data
             };
             modelBuilder.Entity<Permissao>().HasData(permissoes);
 
-            
-
-            // Seed Usinas with fixed IDs
             var usinaSolarSP = Guid.NewGuid();
             var usinaEolicaRJ = Guid.NewGuid();
             var usinaBiomassaMG = Guid.NewGuid();
@@ -175,16 +166,8 @@ namespace app.Data
             modelBuilder.Entity<Usina>().HasData(usinas);
 
             
-
-            // Repeat similar steps for FonteDeEnergia, Usinas, GrupoPermissao, Permissao, and Usuarios entities
-            // Assign fixed IDs for related entities and reference foreign key IDs explicitly.
-            // Example for Usinas (using ClienteId and CidadeId):
             
-           
-            
-            // Apply similar corrections to the remaining entities, using explicit IDs.
-
-            // Seed GrupoPermissao with fixed IDs
+   
             // var grupoAdmin = Guid.NewGuid();
             // var grupoOperador = Guid.NewGuid();
             // var grupoVisualizador = Guid.NewGuid();
@@ -197,11 +180,9 @@ namespace app.Data
             // };
             // modelBuilder.Entity<GrupoPermissao>().HasData(gruposPermissoes);
 
-            // // Seed Usuarios
             // var adminUser = Guid.NewGuid();
             // var operadorUser = Guid.NewGuid();
 
-            // // Replace the Dictionary-based seeding with proper entity seeding
             // var usuarioGrupoPermissoes = new List<UsuarioGrupoPermissao>
             // {
             //     new() { UsuarioId = adminUser, GrupoPermissaoId = grupoAdmin },
@@ -209,10 +190,9 @@ namespace app.Data
             // };
             // modelBuilder.Entity<UsuarioGrupoPermissao>().HasData(usuarioGrupoPermissoes);
 
-            // // Similarly, replace the GrupoPermissaoPermissao seeding
             // var grupoPermissaoPermissoes = new List<GrupoPermissaoPermissao>
             // {
-            //     // Admin permissions
+            
             //     new() { 
             //         GrupoPermissaoId = grupoAdmin, 
             //         PermissaoId = permUsinas, 
@@ -239,7 +219,7 @@ namespace app.Data
             //         GrupoPermissao = new GrupoPermissao { Id = grupoAdmin, Nome = "Administrador", CreatedAt = DateTime.Now } 
             //     },
                 
-            //     // Operator permissions
+        
             //     new() { 
             //         GrupoPermissaoId = grupoOperador, 
             //         PermissaoId = permUsinas, 
@@ -251,7 +231,7 @@ namespace app.Data
             //         GrupoPermissao = new GrupoPermissao { Id = grupoOperador, Nome = "Operador", CreatedAt = DateTime.Now } 
             //     },
                 
-            //     // Viewer permissions
+        
             //     new() { 
             //         GrupoPermissaoId = grupoVisualizador, 
             //         PermissaoId = permUsinas, 
@@ -261,8 +241,6 @@ namespace app.Data
             // modelBuilder.Entity<GrupoPermissaoPermissao>().HasData(grupoPermissaoPermissoes);
 
             
-
-            // var usuarios = new List<Usuario>
             // {
             //     new() { 
             //         Id = adminUser, 
@@ -283,7 +261,7 @@ namespace app.Data
             // };
             // modelBuilder.Entity<Usuario>().HasData(usuarios);
 
-            // // Seed ProducaoDeEnergia
+  
             // var producoesEnergia = new List<ProducaoDeEnergia>
             // {
             //     new() {
