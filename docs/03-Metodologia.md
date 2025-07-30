@@ -29,20 +29,6 @@ etiquetas:
 
 A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM. Nós optamos por este método devido à sua flexibilidade, que nos permite adaptar rapidamente às mudanças nos requisitos, uma situação comum em projetos. O SCRUM se baseia em princípios iterativos e incrementais, permitindo entregas contínuas e a adaptação ao longo do processo (SCHWABER; SUTHERLAND, 2017). Além disso, ele favorece a realização de ciclos curtos de trabalho, possibilitando entregas frequentes de funcionalidades.
 
-## Divisão de Papéis
-
-A divisão de papéis dentro de nossa equipe, que utilizará o método ágil SCRUM como base para definir os processos de desenvolvimento, é fundamental para garantir a eficiência e a clareza nas responsabilidades. Por isso, a equipe está organizada da seguinte forma:
-
-• **Scrum Master:** Ariane Moura.
-
-• **Product Owner:** Raphael Rodrigues.
-
-• **Equipe de Desenvolvimento:** Ariane Moura, Raphael Rodrigues, Alexsander, Vinicius, Breno.
-
-• **Equipe de Design:** Ariane Moura.
-
-Essa estrutura assegura que cada membro tenha um papel claro, promovendo assim a colaboração e alinhamento com os objetivos do projeto. O Scrum Master será responsável por facilitar o processo e remover obstáculos, enquanto o Product Owner definirá as prioridades do backlog e irá assegurar que as entregas atendam às expectativas dos stakeholders (Clientes). As equipes de desenvolvimento e design trabalharão em conjunto para implementar as funcionalidades e criar soluções visuais que atendam às necessidades do projeto.
-
 ## Processo
 
 Para a implementação do SCRUM, seguimos uma série de práticas que garantem a eficiência e a organização do nosso trabalho:
