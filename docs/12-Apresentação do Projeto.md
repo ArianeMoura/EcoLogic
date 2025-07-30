@@ -4,13 +4,6 @@ https://github.com/user-attachments/assets/38e0813a-42b3-46c3-a93b-9d3b2cec5836
 
 <br>
 
-# Apresentação Final
-
-
-https://github.com/user-attachments/assets/6483b7e6-b9b3-4b4d-b71c-5ac07e2a5787
-
-<br>
-
 ## EcoLogic
 
 <img src= "../docs/img/ecologictitulo.png" width="500" align="center">
